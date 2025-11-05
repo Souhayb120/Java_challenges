@@ -1,5 +1,6 @@
 
 // challenge 01
+import java.util.Arrays;
 import java.util.Scanner;
 /*public class Main {
     public static void main (String[] args){
@@ -54,7 +55,7 @@ public class Main {
     }
 }
 
-*/
+
 
 //challenge 04 :
 
@@ -121,9 +122,46 @@ while (menu != 0){
 
 
 
+// challenge 06
+
+
+public class Main
+{
+
+   static int[] myNum = {10, 20, 30, 40};
+    public static void main (String[] args)
+    {
+        int lastIndex = myNum.length - 1;
+        int[] newNum = new int[myNum.length];
+        for(int i = myNum.length - 1 ; i >= 0   ;i--){
+            newNum[lastIndex -  i] = myNum[i];
+        }
+        System.out.println(Arrays.toString(newNum));
+    }
+}
 
 
 
+// challenge 05
+
+public class Main {
+    static int[] myNum = {10, 20, 30, 40};
+    public static void main(String[] args) {
+        int max = myNum[0];
+        int secondMax =  myNum[0];
+        for(int i = 0; i < myNum.length; i++){
+            if(myNum[i] > max){
+                secondMax = max;
+                max = myNum[i];
+            }
+
+
+            }
+        System.out.println(secondMax);
+        }
+    }
+
+*/
 
 
 
