@@ -161,6 +161,23 @@ public class Main {
         }
     }
 
+       // challenge 07
+    public class Main {
+    public static void main(String[] args) {
+        
+    int[] arr = {5, 3, 3, 5, 3,2};
+    HashMap<Integer, Integer> count = new HashMap<>();
+    for (int num : arr) {
+    if(count.containsKey(num)){
+        count.put(num,count.get(num) + 1);
+    }else{
+        count.put(num,1);
+    };
+}
+   System.out.println(count);
+    }
+    }
+
 */
 
 
