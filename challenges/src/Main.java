@@ -2,6 +2,9 @@
 // challenge 01
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.HashSet;
+ import java.util.Set;
 /*public class Main {
     public static void main (String[] args){
         Scanner test = new Scanner (System.in);
@@ -195,6 +198,28 @@ for (int start = 0; start < arr.length; start++) {
         }
     }
 }
+    }
+    }
+
+    
+        // challenge 09
+    public class Main {
+    public static void main(String[] args) {
+   int[] result;
+   int[] listOne = {1, 2,8,5};
+   int[] listTwo = {8,2,9,4};
+          Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < listOne.length; i++) {
+            for (int j = 0; j < listTwo.length; j++) {
+                if (listOne[i] == (listTwo[j])) {
+
+                    // add common elements
+                    set.add(listOne[i]);
+                    break;
+                }
+            }
+        }
+        System.out.println(set.toString());
     }
     }
 */
